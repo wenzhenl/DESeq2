@@ -24,21 +24,21 @@ This is code review for DESeq2 for my personal understanding
 * note: not all of these functions are exported.
 
 * DESeq
-  *|- estimateSizeFactors
-  *|- estimateSizeFactorsForMatrix
-    *|- estimateDispersions
-*    |- estimatedispersionsgeneest
-*       |- fitnbinomglms
-*          |- fitbeta (c++)
-*       |- fitdisp (c++)
-*    |- estimatedispersionsfit
-*    |- estimatedispersionsmap
-*       |- estimatedispersionpriorvar
-*       |- fitdisp (c++)
-* |- nbinomwaldtest
-*    |- fitglmswithprior
-*       |- fitnbinomglms
-*          |- fitbeta (c++)
-*       |- estimatebetapriorvar
-*       |- fitnbinomglms
-*          |- fitBeta (C++)
+  * |- estimateSizeFactors
+  * |- estimateSizeFactorsForMatrix
+  * |- estimateDispersions
+    * |- estimatedispersionsgeneest
+    * |- fitnbinomglms
+    * |- fitbeta (c++)
+    * |- fitdisp (c++)
+    * |- estimatedispersionsfit
+	* |- estimatedispersionsmap
+	* |- estimatedispersionpriorvar
+	* |- fitdisp (c++)
+	* |- nbinomwaldtest
+	* |- fitglmswithprior
+	* |- fitnbinomglms
+	* |- fitbeta (c++)
+	* |- estimatebetapriorvar
+	* |- fitnbinomglms
+	* |- fitBeta (C++)
