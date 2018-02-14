@@ -19,28 +19,28 @@ This is code review for DESeq2 for my personal understanding
 
 * rlogTransformation ... rlog
 * varianceStabilizingTransformation ... VST
-#
-# general outline of the internal function calls.
-# note: not all of these functions are exported.
-#
-# DESeq
-# |- estimateSizeFactors
-#    |- estimateSizeFactorsForMatrix
-# |- estimateDispersions
-#    |- estimateDispersionsGeneEst
-#       |- fitNbinomGLMs
-#          |- fitBeta (C++)
-#       |- fitDisp (C++)
-#    |- estimateDispersionsFit
-#    |- estimateDispersionsMAP
-#       |- estimateDispersionPriorVar
-#       |- fitDisp (C++)
-# |- nbinomWaldTest
-#    |- fitGLMsWithPrior
-#       |- fitNbinomGLMs
-#          |- fitBeta (C++)
-#       |- estimateBetaPriorVar
-#       |- fitNbinomGLMs
-#          |- fitBeta (C++)
-#
-############################################################
+
+* general outline of the internal function calls.
+* note: not all of these functions are exported.
+
+* DESeq
+  **|- estimateSizeFactors
+*    |- estimateSizeFactorsForMatrix
+* |- estimateDispersions
+*    |- estimateDispersionsGeneEst
+*       |- fitNbinomGLMs
+*          |- fitBeta (C++)
+*       |- fitDisp (C++)
+*    |- estimateDispersionsFit
+*    |- estimateDispersionsMAP
+*       |- estimateDispersionPriorVar
+*       |- fitDisp (C++)
+* |- nbinomWaldTest
+*    |- fitGLMsWithPrior
+*       |- fitNbinomGLMs
+*          |- fitBeta (C++)
+*       |- estimateBetaPriorVar
+*       |- fitNbinomGLMs
+*          |- fitBeta (C++)
+*
+************************************************************
